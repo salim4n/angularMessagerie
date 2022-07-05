@@ -1,0 +1,29 @@
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "head head head"
+    "left body body"
+    "left body body";
+}
+
+.head { grid-area: head;
+  background-color: lightgray;
+  border: 1px solid navy;
+  padding: 10px;
+  text-align: center;}
+
+.left { grid-area: left;
+  background-color: lightgray;
+  border: 1px solid navy;
+  padding: 10px;
+  }
+
+.body { grid-area: body;
+  background-color: lightgray;
+  border: 1px solid navy;
+  padding: 10px;
+  text-align: center;}
